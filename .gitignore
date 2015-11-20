@@ -3,6 +3,7 @@
 *.lo
 *.o
 *.obj
+*.cmake
 
 # Precompiled Headers
 *.gch
@@ -31,3 +32,4 @@
 *.root
 *.txt
 *.docx
+*.csv
