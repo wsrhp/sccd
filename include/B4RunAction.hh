@@ -61,7 +61,7 @@ class B4RunAction : public G4UserRunAction
     virtual ~B4RunAction();
 
     virtual void BeginOfRunAction(const G4Run*  aRun);
-    virtual void   EndOfRunAction(const G4Run*);
+    virtual void   EndOfRunAction(const G4Run*  aRun);
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

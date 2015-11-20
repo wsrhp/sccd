@@ -36,6 +36,7 @@
 #include "PhysicsListMessenger.hh"
  
 #include "PhysListEmStandard.hh"
+#include "PhysListEmLivermore.hh"
 #include "G4EmStandardPhysics.hh"
 #include "G4EmStandardPhysics_option1.hh"
 #include "G4EmStandardPhysics_option2.hh"
@@ -67,8 +68,9 @@ PhysicsList::PhysicsList()
 
   // EM physics
   fEmName = G4String("emlivermore");
-//  fEmName = G4String("local");
-  fEmPhysicsList = new PhysListEmStandard(fEmName);
+//  fEmName = G4String("livermore");
+  //fEmPhysicsList = new PhysListEmStandard(fEmName);
+  fEmPhysicsList = new PhysListEmLivermore(fEmName);
   
   //add new units for cross sections
   // 

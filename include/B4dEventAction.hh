@@ -48,26 +48,28 @@ public:
   B4dEventAction();
   virtual ~B4dEventAction();
 
-  virtual void  BeginOfEventAction(const G4Event* event);
-  virtual void    EndOfEventAction(const G4Event* event);
+  virtual void  BeginOfEventAction(const G4Event* anEvent);
+  virtual void    EndOfEventAction(const G4Event* anEvent);
     
 private:
+
   // methods
   G4THitsMap<G4double>* GetHitsCollection(G4int hcID,
-                                          const G4Event* event) const;
+                                          const G4Event* anEvent) const;
   G4double GetSum(G4THitsMap<G4double>* hitsMap) const;
   void PrintEventStatistics(G4double absoEdep, G4double absoTrackLength) const;
   G4String num2str(G4int i);
 
   // data members                   
-  G4int  PixelEdepHCID;
-  static const  G4int  nofpixelineachcolumn=11;
-  static const  G4int  nofpixelineachrow=11;
+   G4int  PixelEdepHCID;
+   static const  G4int  nofpixelineachcolumn=11;
+   static const  G4int  nofpixelineachrow=11;
    G4String pixelname[nofpixelineachrow][nofpixelineachcolumn];
- G4int Yno;
- G4int eventID;
+   G4int Yno;
+   G4int eventID;
 
 };
+
                      
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
