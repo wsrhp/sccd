@@ -4,6 +4,8 @@
 *.o
 *.obj
 *.cmake
+*.make
+*.bin
 
 # Precompiled Headers
 *.gch
