@@ -1,0 +1,15 @@
+# Macro file for example B4
+# 
+/control/verbose 0 
+/tracking/verbose 0
+
+#/gps/particle e-
+#/gps/energy 70 keV
+#/gps/position 0 0 100 um
+#/gps/position 0 10 0 um
+#/gps/direction 0 0 -1
+#/gps/ang/type beam2d
+#/gps/ang/sigma_x 0.0 mrad
+#/gps/ang/sigma_y 0.0 mrad
+
+/run/beamOn 10000
